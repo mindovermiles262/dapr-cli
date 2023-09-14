@@ -25,5 +25,5 @@ jobs:
   #       uses: docker/build-push-action@v5
   #       with:
   #         push: true
-  #         tags: andrewdusstorable/dapr-cli:latest
+  #         tags: andrewdussstorable/dapr-cli:latest
   #         file: docker/Dockerfile

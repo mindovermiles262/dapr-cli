@@ -24,5 +24,5 @@ jobs:
           push: true
           tags: andrewdussstorable/dapr-cli:latest
           file: docker/Dockerfile
-          build-args:
-            - VERSION=${{ github.event.release.name }}
+          build-args: |
+            VERSION=${{ github.event.release.name }}

@@ -5,7 +5,7 @@ on:
     types: ["published"]
 
 jobs:
-  information:
+  after-release:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Info: ${{ github.event.release }}, ${{ github.event.release.name }}, ${{ github.event.release.body }}"

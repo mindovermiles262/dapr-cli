@@ -8,7 +8,8 @@ jobs:
   after-release:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Info ${{ github.event.release }}, ${{ github.event.release.name }}, ${{ github.event.release.body }}"
+      - name: echo
+        run: echo "foo"
   # docker:
   #   runs-on: ubuntu-latest
   #   steps:

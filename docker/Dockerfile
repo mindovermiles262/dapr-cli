@@ -4,7 +4,11 @@ ARG VERSION=1.11.0
 ARG ARCH=linux
 ARG CPU=amd64
 
-RUN apk add wget
+RUN apk add wget \
+  && echo "[*] Version: ${VERSION}" \
+  && echo "[*] Arch: ${ARCH}" \
+  && echo "[*] CPU: ${CPU}"
+
 RUN wget \
     --quiet \
     -O dapr-cli.tgz \
